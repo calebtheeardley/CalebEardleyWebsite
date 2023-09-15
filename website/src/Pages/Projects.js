@@ -23,7 +23,7 @@ const theme = createTheme({
 
 const cardsData = [
   {
-    imageUrl: 'Images/Redux.png',
+    imageUrl: 'Images/Redux.webp',
     title: 'Redux',
     description: 'This is a tool being developed at Idaho State University meant to visualize NP-Complete Problems and there reductions',
     linkTo: '/projects/redux',

@@ -57,7 +57,7 @@ export default function Home() {
                             display: 'flex',
                             alignItems: 'center', // Center vertically
                             justifyContent: 'center',
-                            backgroundImage: 'url("Images/MeCropped.jpg")', // Replace with your image URL
+                            backgroundImage: 'url("Images/MeCropped.webp")', // Replace with your image URL
                             backgroundSize: 'cover',
                           }}
                     >
