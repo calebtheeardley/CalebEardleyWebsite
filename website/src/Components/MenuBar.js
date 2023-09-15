@@ -22,8 +22,8 @@ const theme = createTheme({
     color: 'inherit',
     size: 'large',
     // fontWeight: 'bold',
-    fontSize: 30,
-    minHeight: '100px'
+    fontSize: 25,
+    minHeight: '75px'
 }
 
 const getColor = (path, location) => {
@@ -49,13 +49,16 @@ export default function MenuBar() {
           theme = {theme}
           sx={{
               display: 'flex',
-              minHeight: '100px',
+              minHeight: '75px',
           }}
           >
           <Toolbar
+            disableGutters={true}
             sx={{ 
               paddingLeft: 0,
               paddingRight: 0,
+              marginLeft: 0,
+              marginRight: 0,
               flexGrow: 1,
             }}
           >
