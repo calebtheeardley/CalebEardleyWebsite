@@ -9,7 +9,8 @@ on:
     branches:
       - main
 
-CI: false
+env:
+  CI: false
 
 jobs:
   build_and_deploy_job:
