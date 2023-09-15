@@ -10,7 +10,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CssBaseline from '@mui/material/CssBaseline';
 import Redux from './Pages/ProjectPages/Redux.js';
-import Game from './Pages/ProjectPages/Game';
 
 
 // function App() {

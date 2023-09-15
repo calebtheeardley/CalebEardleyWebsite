@@ -28,12 +28,6 @@ const cardsData = [
     description: 'This is a tool being developed at Idaho State University meant to visualize NP-Complete Problems and there reductions',
     linkTo: '/projects/redux',
   },
-  {
-    imageUrl: 'Images/Redux.png',
-    title: 'Game',
-    description: 'This is a tool being developed at Idaho State University meant to visualize NP-Complete Problems and there reductions',
-    linkTo: '/projects/game',
-  },
 ];
 
 
