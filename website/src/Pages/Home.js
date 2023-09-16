@@ -6,29 +6,28 @@ import { Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import MenuBar from '../Components/MenuBar';
 
-const theme = createTheme({
-  palette: {
-    Theme1: {
-      main: '#769fb6',
-      light: '#9dbbae',
-      dark: '#188fa7',
-      contrastText: '#242105',
-    },
-  },
-});
 
+const titleStyle = {
+    marginBottom: '20px',
+    maxWidth: "100vw",
+    marginRight: 75,
+    marginLeft: 75,
+    fontFamily: 'Ubuntu, sans-serif',
+    fontSize: 80
+  };
+
+const aboutMeStyle = {
+    marginBottom: '20px',
+    maxWidth: "100vw",
+    marginRight: 75,
+    marginLeft: 75,
+    fontFamily: 'Ubuntu, sans-serif',
+    fontSize: 22
+};
 
 
 export default function Home() {
 
-    const bStyle = {
-        flexGrow: 1,
-        color: 'inherit',
-        size: 'large',
-        // fontWeight: 'bold',
-        fontSize: 30,
-        minHeight: '100px'
-    }
     return(
         <>
             <MenuBar></MenuBar>
@@ -76,11 +75,12 @@ export default function Home() {
                     <Paper
                         sx={{
                             display: 'flex',
+                            flexDirection: 'column',
                             justifyContent: 'center', // Center horizontally
-                            alignItems: 'center', // Center vertically
+                            alignItems: 'left', // Center vertically
                         }}
                     >
-                        <Typography
+                        {/* <Typography
                             sx={{
                                 textAlign: 'center',
                                 m: 30,
@@ -88,8 +88,39 @@ export default function Home() {
                                 marginTop: 30,
                             }}
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla bibendum tellus, id scelerisque nibh tristique quis. Fusce gravida urna id fermentum ullamcorper. Vivamus tristique mauris eget semper. Sed vestibulum, ante quis pellentesque cursus, purus sapien ultricies metus, non volutpat purus est sit amet arcu. Proin gravida vulputate enim, in cursus velit suscipit in. Nulla semper id justo eget laoreet. Integer varius, nisl id ullamcorper feugiat, odio arcu viverra tortor, vel bibendum est ex ac mi. Quisque aliquet ante nec dolor blandit, id efficitur nisi vestibulum. Etiam a tellus vel urna interdum facilisis id eget turpis. Nunc bibendum euismod tellus, at consequat dolor luctus at. Sed id facilisis justo. Nulla facilisi.
-                        </Typography>
+                            
+                        </Typography> */}
+                            <Typography style={aboutMeStyle}>
+                                Hello, my name is
+                            </Typography>
+                            <Typography style={titleStyle}>
+                               Caleb Eardley
+                            </Typography>
+                            <Typography style={aboutMeStyle}>
+                                Hello there! I'm Caleb Eardley, a graduate student at Montana State University.
+                            </Typography>
+                            <Typography style={aboutMeStyle}>
+                                I am currently pursuing my master's degree in Computer Science,
+                                specifically interested in Algorithms, and Computational Theory. 
+                                My academic pursuits are driven by a desire to find novel solutions to
+                                problems encoutered everyday.
+                            </Typography>
+                            <Typography style={aboutMeStyle}>
+                                I recieved a Bachelors of Science in Computer Science from Idaho State University
+                                in December of 2022, and began my studies at MSU in August of 2023. At Idaho State University
+                                I was a research assistant for Dr. Paul Bodily where I worked on a team developing an educational
+                                tool called Redux, meant to collect and visualoze NP-Complete problems.
+                            </Typography>
+                            <Typography style={aboutMeStyle}>
+                                Ultimatly I would like to get a Ph.D. in Computer Science and work at a University 
+                                as an instructor and researcher.
+                            </Typography>
+
+                            <Typography style={aboutMeStyle}>
+                                I'm always eager to connect with fellow enthusiasts,
+                                researchers, and potential collaborators. Feel free to explore my
+                                website, check out my projects, and don't hesitate to reach out. 
+                            </Typography>
                     </Paper>
                 </Box>
             </Box>

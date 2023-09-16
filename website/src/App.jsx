@@ -1,7 +1,7 @@
 import './App.css';
 import Main from './Pages/Home.js'
 import CV from './Pages/CV.js'
-import Contact from './Pages/Contact';
+import Links from './Pages/Links';
 import Research from './Pages/Research';
 import Projects from './Pages/Projects';
 import Layout from './Pages/Layout.js'
@@ -49,7 +49,7 @@ function App() {
           <Route path="research" element={<Research />} />
           <Route path="projects" element={<Projects />}/>
           <Route path="projects/redux" element={<Redux />}/>
-          <Route path="contact" element={<Contact />} />
+          <Route path="links" element={<Links />} />
         {/* </Route> */}
       </Routes>
     </BrowserRouter>

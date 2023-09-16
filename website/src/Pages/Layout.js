@@ -21,7 +21,7 @@ const Layout = () => {
             <Link to="/projects/redux">Redux</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/links">Links</Link>
           </li>
         </ul>
       </nav>
