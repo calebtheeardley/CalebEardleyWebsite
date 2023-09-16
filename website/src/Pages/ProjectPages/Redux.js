@@ -58,7 +58,7 @@ export default function Redux() {
                         sx={{
                             display: 'flex',
                             alignItems: 'center', // Center vertically
-                            backgroundImage: 'url("../Images/ReduxFull.png")', // Replace with your image URL
+                            backgroundImage: 'url("../Images/ProjectPageImages/ReduxFull.webp")', // Replace with your image URL
                             backgroundSize: 'contain',
                           }}
                     >

@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import { createTheme } from '@mui/material/styles';
 import React, { createContext, useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import HomeIcon from '../Icons/HomeIcon';
 
 const theme = createTheme({
     palette: {
@@ -25,6 +26,8 @@ const theme = createTheme({
     fontSize: 25,
     minHeight: '75px'
 }
+
+
 
 const getColor = (path, location) => {
   if(path == '/'){
@@ -62,11 +65,11 @@ export default function MenuBar() {
               flexGrow: 1,
             }}
           >
-              <Button component={Link} to="/" sx={bStyle} style = {{backgroundColor: getColor('/', location)}}>Home</Button>
+              <Button component={Link} to="/" sx={bStyle} style = {{backgroundColor: getColor('/', location)}} ><HomeIcon sx={{fontSize: 40}}/></Button>
               <Button component={Link} to="/projects" sx={bStyle} style = {{backgroundColor: getColor('projects', location)}}>Projects</Button>
-              <Button component={Link} to="/research" sx={bStyle} style = {{backgroundColor: getColor('research', location)}}>Research</Button>
+              {/* <Button component={Link} to="/research" sx={bStyle} style = {{backgroundColor: getColor('research', location)}}>Research</Button> */}
               <Button component={Link} to="/cv" sx={bStyle} style = {{backgroundColor: getColor('cv', location)}}>CV</Button>
-              <Button component={Link} to="/contact" sx={bStyle} style = {{backgroundColor: getColor('contact', location)}}>Contact</Button>
+              <Button component={Link} to="/links" sx={bStyle} style = {{backgroundColor: getColor('links', location)}}>Links</Button>
           </Toolbar>
       </AppBar>
   )
