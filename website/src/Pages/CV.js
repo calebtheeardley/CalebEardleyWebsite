@@ -1,8 +1,5 @@
 import '../App.css'
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import { createTheme } from '@mui/material/styles';
-import { Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import MenuBar from '../Components/MenuBar';
 export default function CV() {
@@ -63,7 +60,7 @@ export default function CV() {
                     <strong>Jan 2021 – June 2023</strong><br />
                     <em>Graduate Research Assistant</em><br />
                     Montana State University, Bozeman MT<br />
-                    Fixed charge network flow to optimize carbon capture systems
+                    Currently working with Dr. Shawn Yaw looking at network flow optimization and its applications in regard to carbon capture systems and optimization
                   </p>
                 </div>
                 <div className="cv-section">

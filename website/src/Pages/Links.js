@@ -1,27 +1,11 @@
 import '../App.css'
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import { createTheme } from '@mui/material/styles';
-import { Typography } from '@mui/material';
-import Paper from '@mui/material/Paper';
 import MenuBar from '../Components/MenuBar';
 import LinkCard from '../Components/LinkCard';
-import HomeIcon from '../Icons/HomeIcon';
 import GitIcon from '../Icons/GitIcon';
 import LinkdinIcon from '../Icons/LinkdinIcon';
 import ResearchGateIcon from '../Icons/ResearchGateIcon';
 import EmailIcon from '../Icons/EmailIcon';
-
-const theme = createTheme({
-  palette: {
-    Theme1: {
-      main: '#769fb6',
-      light: '#9dbbae',
-      dark: '#188fa7',
-      contrastText: '#242105',
-    },
-  },
-});
 
 const linkData = [
   { icon: <LinkdinIcon style={{fontSize: 55,}}/>, text: 'Linked In', linkTo: 'www.linkedin.com/in/caleb-eardley-b10045234' },
