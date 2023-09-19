@@ -1,6 +1,6 @@
 import React from 'react';
 import { createTheme } from '@mui/material/styles';
-import { Button, Typography, makeStyles } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 const theme = createTheme({
     palette: {

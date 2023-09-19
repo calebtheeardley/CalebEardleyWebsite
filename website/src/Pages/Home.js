@@ -1,7 +1,6 @@
 import '../App.css'
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { createTheme } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import MenuBar from '../Components/MenuBar';

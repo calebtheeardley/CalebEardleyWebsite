@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
 import { createTheme } from '@mui/material/styles';
-import React, { createContext, useContext, useState } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import HomeIcon from '../Icons/HomeIcon';
 
@@ -30,8 +30,8 @@ const theme = createTheme({
 
 
 const getColor = (path, location) => {
-  if(path == '/'){
-    if (path == location){
+  if(path === '/'){
+    if (path === location){
       return theme.palette.Theme1.dark;
     }
     else{
